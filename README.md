@@ -7,6 +7,7 @@
 - Styled components
 - ESLint
 - Jest
+- Husky
 
 
 
