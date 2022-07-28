@@ -26,6 +26,7 @@
       2,
       { "namedComponents": "arrow-function" }
     ],
+    "comma-dangle": ["error", "never"],
     "arrow-body-style": ["error", "always"],
     "jsx-quotes": ["error", "prefer-single"],
     "react/no-array-index-key": "off",
