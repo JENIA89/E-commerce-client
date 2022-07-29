@@ -13,5 +13,6 @@ export const GlobalStyles = createGlobalStyle`
     font-weight: 400;
     font-family: 'Libre Franklin', sans-serif;
     overflow: hidden;
+    box-sizing: border-box;
   }
 `;
