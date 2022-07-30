@@ -2,6 +2,7 @@
 
 - React
 - Redux Toolkit
+- React Hook Form
 - TypeScript
 - Axios
 - Styled components
