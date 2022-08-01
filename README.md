@@ -10,7 +10,7 @@
 - Jest
 - Husky
 
-# FrontEnd
-- https://github.com/JENIA89/E-commerce-client
+# BackEnd
+- https://github.com/JENIA89/E-commerce-server
 
 
