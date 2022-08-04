@@ -10,7 +10,5 @@ export const theme: ITheme = {
     white: '#FFFFFF'
   },
 
-  sizes: {
-    container: { maxWidth: 1920 }
-  }
+  sizes: { container: { maxWidth: 1920 } }
 };

@@ -1,7 +1,5 @@
 import React, { FC } from 'react';
 
-const Checkout: FC = () => {
-  return <div>Checkout</div>;
-};
+const Checkout: FC = () => <div>Checkout</div>;
 
 export default Checkout;

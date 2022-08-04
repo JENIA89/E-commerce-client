@@ -1,7 +1,5 @@
 import React, { FC } from 'react';
 
-const Collections: FC = () => {
-  return <div>Collections</div>;
-};
+const Collections: FC = () => <div>Collections</div>;
 
 export default Collections;
