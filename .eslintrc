@@ -42,6 +42,7 @@
       "error",
       { "multiline": true, "minProperties": 5 }
     ],
+    "@typescript-eslint/no-explicit-any": ["off"],
     "jsx-quotes": ["error", "prefer-single"],
     "react/no-array-index-key": "off",
     "react/forbid-prop-types": "off",
