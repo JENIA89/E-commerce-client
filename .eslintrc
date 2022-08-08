@@ -26,7 +26,6 @@
       2,
       { "namedComponents": "arrow-function" }
     ],
-    "comma-dangle": ["error", "never"],
     "arrow-body-style": [
       "error",
       "as-needed",
@@ -38,12 +37,10 @@
         "allowSingleExtends": true
       }
     ],
-    "object-curly-newline": [
-      "error",
-      { "multiline": true, "minProperties": 5 }
-    ],
     "@typescript-eslint/no-explicit-any": ["off"],
+    "implicit-arrow-linebreak": ["off"],
     "jsx-quotes": ["error", "prefer-single"],
+    "consistent-return": "off",
     "react/no-array-index-key": "off",
     "react/forbid-prop-types": "off",
     "react/no-did-mount-set-state": "warn",
