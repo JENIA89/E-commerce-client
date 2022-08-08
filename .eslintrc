@@ -37,6 +37,7 @@
         "allowSingleExtends": true
       }
     ],
+    "object-curly-newline": ["off"],
     "@typescript-eslint/no-explicit-any": ["off"],
     "implicit-arrow-linebreak": ["off"],
     "jsx-quotes": ["error", "prefer-single"],

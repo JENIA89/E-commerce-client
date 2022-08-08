@@ -7,8 +7,8 @@ export const theme: ITheme = {
     yellow: '#ECD278',
     silver: '#D2D2D2',
     grey: '#E3E8E6',
-    white: '#FFFFFF'
+    white: '#FFFFFF',
   },
 
-  sizes: { container: { maxWidth: 1920 } }
+  sizes: { container: { maxWidth: 1920 } },
 };
