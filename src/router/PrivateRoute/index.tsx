@@ -7,7 +7,8 @@ interface PrivateRouteProps {
 
 const PrivateRoute: FC<PrivateRouteProps> = ({ children }): JSX.Element => {
   const { user } = useAppSelector((state) => ({ ...state.auth }));
-  return user?._id ? children : <p>Not logged in</p>;
+
+  return user ? children : <p>Not logged in</p>;
 };
 
 export default PrivateRoute;

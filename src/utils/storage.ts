@@ -1,9 +1,10 @@
-export const setLocalStorageLoggedUser = (data: any): void => {
-  localStorage.setItem('logged_user', JSON.stringify(data));
+export const setLocalStorageToken = (data: any): void => {
+  localStorage.setItem('token', JSON.stringify(data));
 };
 
-export const getLocalStorageLoggedUser = () => JSON.parse(localStorage.getItem('logged_user') || '{}');
+export const getLocalStorageToken = (): any =>
+  JSON.parse(localStorage.getItem('token') || '');
 
-export const removeLocalStorageLoggedUser = (): void => {
-  localStorage.removeItem('logged_user');
+export const removeLocalStorageToken = (): void => {
+  localStorage.removeItem('token');
 };
