@@ -9,4 +9,5 @@ export interface IRegister extends ILoginModel {
 
 export interface IUser {
   username: string;
+  _id?: string
 }

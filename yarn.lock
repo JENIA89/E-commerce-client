@@ -4409,6 +4409,11 @@ eslint-config-airbnb@^19.0.4:
     object.assign "^4.1.2"
     object.entries "^1.1.5"
 
+eslint-config-prettier-react@^0.0.24:
+  version "0.0.24"
+  resolved "https://registry.yarnpkg.com/eslint-config-prettier-react/-/eslint-config-prettier-react-0.0.24.tgz#25526b05307ea7c2e1b92010342a9496549320f1"
+  integrity sha512-5R7nY0TOqQjXrHvsfLccpEjYUz3EE7jAOJeMoHp+ou/iV4H6hlNYZO5uK/bIDmMFsJ1vNNgjPg/0MtJrApaoxQ==
+
 eslint-config-react-app@^7.0.1:
   version "7.0.1"
   resolved "https://registry.npmjs.org/eslint-config-react-app/-/eslint-config-react-app-7.0.1.tgz"

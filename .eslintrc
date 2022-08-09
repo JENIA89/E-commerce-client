@@ -37,6 +37,8 @@
         "allowSingleExtends": true
       }
     ],
+    "parens-new-line":["off"],
+    "no-useless-return": ["off"],
     "object-curly-newline": ["off"],
     "@typescript-eslint/no-explicit-any": ["off"],
     "implicit-arrow-linebreak": ["off"],
@@ -48,7 +50,7 @@
     "react/no-did-update-set-state": "off",
     "import/prefer-default-export": "off",
     "react/no-unused-prop-types": "warn",
-    "no-underscore-dangle": "warn",
+    "no-underscore-dangle": "off",
     "no-param-reassign": "off",
     "linebreak-style": 0,
     "react/sort-comp": 0,

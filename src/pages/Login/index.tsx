@@ -1,6 +1,7 @@
 import React, { FC, useState } from 'react';
 import { useAppDispatch } from 'hooks/redux';
 import { useNavigate } from 'react-router-dom';
+import { login } from 'redux/slices/auth/actionCreators';
 import * as S from './styled';
 
 const Login: FC = () => {
@@ -11,6 +12,10 @@ const Login: FC = () => {
 
   const handleSubmit = (e: any) => {
     e.preventDefault();
+    if (!username || !password) return;
+    const data = { username, password };
+    dispatch(login(data));
+    navigate('/');
   };
 
   return (
