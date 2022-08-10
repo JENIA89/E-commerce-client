@@ -37,7 +37,8 @@
         "allowSingleExtends": true
       }
     ],
-    "parens-new-line":["off"],
+    "react/jsx-wrap-multilines": 0,
+    "parens-new-line": ["off"],
     "no-useless-return": ["off"],
     "object-curly-newline": ["off"],
     "@typescript-eslint/no-explicit-any": ["off"],
