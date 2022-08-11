@@ -8,7 +8,9 @@ export const api = axios.create({
   baseURL,
 });
 
-api.interceptors.request.use((config: any) => {
-  config.headers.Authorization = `Bearer ${getLocalStorageToken()}`;
-  return config;
-});
+// api.interceptors.request.use((config: any) => {
+//   if (getLocalStorageToken()) {
+//     config.headers.Authorization = `Bearer ${getLocalStorageToken()}`;
+//   }
+//   return config;
+// });
