@@ -32,6 +32,7 @@ const auth = createSlice({
     },
     [login.fulfilled.type]: (state: AuthState, action: PayloadAction<any>) => {
       state.isLoading = false;
+      state.isAuth = true;
       setLocalStorageToken(action.payload?.token);
       state.user = action.payload;
     },
@@ -47,7 +48,6 @@ const auth = createSlice({
       action: PayloadAction<any>,
     ) => {
       state.isLoading = false;
-      state.isAuth = true;
       state.user = action.payload;
     },
     [profile.rejected.type]: (state: AuthState, action: PayloadAction<any>) => {

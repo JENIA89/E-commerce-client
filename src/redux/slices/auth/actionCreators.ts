@@ -1,5 +1,6 @@
 import { createAsyncThunk } from '@reduxjs/toolkit';
-import { ILoginModel } from 'interfaces/auth';
+import { ILoginModel } from 'api/auth/types';
+
 import * as api from '../../../api/auth';
 
 export const login = createAsyncThunk(

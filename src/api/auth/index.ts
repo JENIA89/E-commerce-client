@@ -1,5 +1,9 @@
 import { api } from 'api';
+import { AxiosPromise } from 'axios';
+import { EndpointEnum, ILoginModel, IRegister } from './types';
 
-export const register = (dto: any) => api.post('/auth/register', dto);
-export const login = (dto: any) => api.post('/auth/login', dto);
-export const profile = () => api.get('/auth/profile');
+export const register = (dto: IRegister): AxiosPromise =>
+  api.post(EndpointEnum.REGISTER, dto);
+export const login = (dto: ILoginModel): AxiosPromise =>
+  api.post(EndpointEnum.LOGIN, dto);
+export const profile = (): AxiosPromise => api.get(EndpointEnum.PROFILE);
