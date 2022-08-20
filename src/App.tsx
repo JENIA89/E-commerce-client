@@ -1,21 +1,12 @@
-import { useAppDispatch, useAppSelector } from 'hooks/redux';
-import React, { useEffect } from 'react';
-import { profile } from 'redux/slices/auth/actionCreators';
+import React from 'react';
 import AppRouter from 'router';
 import { GlobalStyles } from 'styles/global';
 
-const App = () => {
-  const { isAuth } = useAppSelector((state) => state.auth);
-  const dispatch = useAppDispatch();
-  useEffect(() => {
-    dispatch(profile());
-  }, [isAuth]);
-  return (
-    <>
-      <AppRouter />
-      <GlobalStyles />
-    </>
-  );
-};
+const App = () => (
+  <>
+    <AppRouter />
+    <GlobalStyles />
+  </>
+);
 
 export default App;

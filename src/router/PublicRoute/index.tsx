@@ -1,14 +1,11 @@
-import React, { FC, useEffect } from 'react';
+import React, { FC } from 'react';
 import { Route, Routes } from 'react-router-dom';
 import { Home, Login, NotFound, Products, Register } from 'pages';
 import PrivateRoute from 'router/PrivateRoute';
-import { useAppDispatch, useAppSelector } from 'hooks/redux';
-import { profile } from 'redux/slices/auth/actionCreators';
+import { useAppSelector } from 'hooks/redux';
 
 const PublicRoute: FC = (): JSX.Element => {
   const { isAuth } = useAppSelector((state) => state.auth);
-
-  console.log(isAuth, 'isAuth');
 
   return (
     <Routes>
