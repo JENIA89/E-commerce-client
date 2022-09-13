@@ -1,7 +1,7 @@
-import { createSlice, PayloadAction } from '@reduxjs/toolkit';
-import { IUser } from 'interfaces/auth';
-import { removeLocalStorageToken, setLocalStorageToken } from 'utils/storage';
-import { login, profile } from './actionCreators';
+import { createSlice, PayloadAction } from "@reduxjs/toolkit";
+import { IUser } from "interfaces/auth";
+import { removeLocalStorageToken, setLocalStorageToken } from "utils/storage";
+import { login, profile } from "./actionCreators";
 
 interface AuthState {
   user: IUser | null;
@@ -14,11 +14,11 @@ const initialState: AuthState = {
   user: null,
   isLoading: false,
   isAuth: false,
-  error: '',
+  error: "",
 };
 
 const auth = createSlice({
-  name: 'auth',
+  name: "auth",
   initialState,
   reducers: {
     setLogout: (state) => {

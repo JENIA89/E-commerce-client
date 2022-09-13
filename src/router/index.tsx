@@ -1,5 +1,5 @@
-import React from 'react';
-import PublicRoute from './PublicRoute';
+import React from "react";
+import PublicRoute from "./PublicRoute";
 
 const AppRouter = () => (
   <div>

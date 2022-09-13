@@ -1,5 +1,5 @@
-import { createGlobalStyle } from 'styled-components';
-import { theme } from './theme';
+import { createGlobalStyle } from "styled-components";
+import { theme } from "./theme";
 
 export const GlobalStyles = createGlobalStyle`
 @import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@300;400;500;600&family=Manrope:wght@200&display=swap');

@@ -26,11 +26,7 @@
       2,
       { "namedComponents": "arrow-function" }
     ],
-    "arrow-body-style": [
-      "error",
-      "as-needed",
-      { "requireReturnForObjectLiteral": false }
-    ],
+    "arrow-body-style": ["off"],
     "@typescript-eslint/no-empty-interface": [
       "error",
       {
@@ -44,7 +40,8 @@
     "object-curly-newline": ["off"],
     "@typescript-eslint/no-explicit-any": ["off"],
     "implicit-arrow-linebreak": ["off"],
-    "jsx-quotes": ["error", "prefer-single"],
+    "quotes": ["error", "double"],
+    "jsx-quotes": ["error", "prefer-double"],
     "consistent-return": "off",
     "react/no-array-index-key": "off",
     "react/forbid-prop-types": "off",

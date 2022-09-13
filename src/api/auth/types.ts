@@ -1,7 +1,7 @@
 export enum EndpointEnum {
-  LOGIN = '/auth/login',
-  REGISTER = '/auth/register',
-  PROFILE = '/auth/profile',
+  LOGIN = "/auth/login",
+  REGISTER = "/auth/register",
+  PROFILE = "/auth/profile",
 }
 
 export interface ILoginModel {
