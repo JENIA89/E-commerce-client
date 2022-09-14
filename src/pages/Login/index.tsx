@@ -1,12 +1,11 @@
 import React, { FC, useState } from "react";
-import { useForm } from "react-hook-form";
+import { Input } from "antd";
 import { useAppDispatch } from "hooks/redux";
 import { Link, useNavigate } from "react-router-dom";
 import { login } from "redux/slices/auth/actionCreators";
 import * as S from "./styled";
 
 const Login: FC = () => {
-  const { handleSubmit } = useForm();
   const [username, setUsername] = useState<string>("");
   const [password, setPassword] = useState<string>("");
   const dispatch = useAppDispatch();
@@ -17,13 +16,12 @@ const Login: FC = () => {
     if (!username || !password) return;
     const data = { username, password };
     dispatch(login(data));
-    navigate("/");
   };
 
   return (
     <S.Container>
       <S.ImageContainer>
-        <img src="assets/images/login-img.svg" alt="loginImg" />
+        <S.ImageArrow src="assets/images/login-img.svg" alt="loginImg" />
       </S.ImageContainer>
       <S.FormContainer>
         <S.LinkToShop>
@@ -31,7 +29,7 @@ const Login: FC = () => {
         </S.LinkToShop>
         <S.FormWrapper>
           <S.FormTitle>Login</S.FormTitle>
-          <form onSubmit={handleSubmit(onSubmit)} autoComplete="off">
+          <form onSubmit={onSubmit} autoComplete="off">
             <input
               onChange={(e) => setUsername(e.target.value)}
               name="username"
@@ -48,6 +46,12 @@ const Login: FC = () => {
             />
             <button type="submit">Login</button>
           </form>
+          <S.LinkToSignUpContainer>
+            <S.LinkToSignUpTitle>Don’t have an account?</S.LinkToSignUpTitle>
+            <S.LinkToSignUp>
+              <Link to="/register">Signup</Link>
+            </S.LinkToSignUp>
+          </S.LinkToSignUpContainer>
         </S.FormWrapper>
       </S.FormContainer>
     </S.Container>

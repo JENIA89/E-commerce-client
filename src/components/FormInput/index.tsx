@@ -1,5 +1,5 @@
 import React, { FC } from "react";
-import { InputProps } from "antd";
+import { Input, InputProps } from "antd";
 import * as S from "./styled";
 
 interface Props extends InputProps {
@@ -7,8 +7,8 @@ interface Props extends InputProps {
   type?: string;
 }
 
-const FormInput: FC<Props> = () => {
-  return <S.FormInputContainer>input</S.FormInputContainer>;
+const FormInput: FC<Props> = ({ type }) => {
+  return <S.InputContainer>Input</S.InputContainer>;
 };
 
 export default FormInput;

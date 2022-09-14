@@ -12,6 +12,7 @@
     "import/no-unresolved": "off",
     "import/extensions": "off",
     "import/first": "off",
+    "react/require-default-props": "off",
     "react/jsx-filename-extension": [
       1,
       { "extensions": [".js", ".jsx", ".ts", ".tsx"] }
