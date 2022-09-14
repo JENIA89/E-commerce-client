@@ -1,5 +1,5 @@
-import axios, { AxiosRequestConfig } from 'axios';
-import { getLocalStorageToken } from 'utils/storage';
+import axios, { AxiosRequestConfig } from "axios";
+import { getLocalStorageToken } from "utils/storage";
 
 const baseURL = process.env.REACT_APP_BASE_API;
 
