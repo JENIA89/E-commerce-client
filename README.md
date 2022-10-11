@@ -1,4 +1,4 @@
-# In this project used
+# E-commerce project
 
 - React
 - Redux Toolkit
