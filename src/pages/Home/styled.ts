@@ -3,6 +3,9 @@ import styled from "styled-components";
 export const Container = styled.div`
   max-width: ${({ theme }) => theme.sizes.container.maxWidth};
   width: 100%;
+`;
+
+export const WrapperContent = styled.div`
   background: url("assets/images/home-bg-max.svg");
   background-position: center;
   background-repeat: no-repeat;
@@ -30,7 +33,7 @@ export const ImageContainer = styled.div`
 export const Title = styled.h1`
   color: ${({ theme }) => theme.colors.white};
   font-weight: 800;
-  font-size: 110px;
+  font-size: 50px;
   text-align: center;
 `;
 
@@ -45,7 +48,6 @@ export const ButtonWrapper = styled.div`
 
 export const Button = styled.div`
   color: ${({ theme }) => theme.colors.white};
-  font-weight: 400;
-  font-size: 30px;
+  font-size: 20px;
   line-height: 24px;
 `;
